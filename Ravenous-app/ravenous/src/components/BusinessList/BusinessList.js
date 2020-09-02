@@ -3,7 +3,7 @@ import './Business.css';
 import Business from '../Business/Business';
 
 
-_ BusinessList _ React.Component {
+class BusinessList extends React.Component {
     render() {
         return(
             <div className="BusinessList">
