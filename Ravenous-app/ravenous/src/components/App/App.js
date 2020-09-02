@@ -4,6 +4,8 @@ import BusinessList from '../BusinessList/BusinessList';
 import BusinessList from '../SearchBar/SearchBar';
 
 
-
+class App extends React.Component{
+  
+}
 
 export default App;
