@@ -1,5 +1,10 @@
+// ************* //
+// This compenet is built to component that simulates a list of single businesses
+// ************//
+
+
 import React from 'react';
-import './Business.css';
+import './BusinessList.css';
 import Business from '../Business/Business';
 
 
