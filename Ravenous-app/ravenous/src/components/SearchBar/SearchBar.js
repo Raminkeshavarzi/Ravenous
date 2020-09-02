@@ -14,11 +14,12 @@ class SearchBar extends React.Component {
 
 //Render Mthood to dynamically create the list items needed to display the sort options (Best Match, Highest Rated, Most Reviewed)  
 renderSortByOptions = () => {
-        return Object.keys(sortByOptions).map(sortByOption =>{
+        return Object.keys(sortByOptions).map(sortByOption => {
             let sortByOptionValue = sortByOptions[sortByOption];  
-            return <li key={sortByOptionValue}> {sortByOptions} </li>;
+            return <li key={sortByOptionValue}> {this.sortByOptions} </li>;
         });
-    };
+    }
+
 render() {
     return (
         <div className="SearchBar">
