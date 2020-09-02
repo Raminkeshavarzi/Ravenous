@@ -1,3 +1,7 @@
+// ************* //
+// This compenet is built to simulates a single busines
+// ************//
+
 import React from 'react';
 import './Business.css';
 
@@ -38,3 +42,5 @@ class Business extends React.Component {
     }
 };
 export default Business;
+
+
