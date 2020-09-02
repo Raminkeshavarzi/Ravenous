@@ -7,3 +7,13 @@ const sortByOptions = {
     "Highest Rated" : 'rating',
     "Most Reviewed" : 'review_count',
 }
+
+// Seacrh Bar component
+
+class SearchBar extends React.Component {
+
+//Render Mthood to dynamically create the list items needed to display the sort options (Best Match, Highest Rated, Most Reviewed)
+    renderSortByOptions = () => {
+        return Object.keys(sortByOptions).map()
+    }  
+}
