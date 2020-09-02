@@ -1,3 +1,7 @@
+// ************* //
+// This compenet  will be used in the future to search for business
+// ************//
+
 import React from 'react';
 import './SearchBar.css';
 
