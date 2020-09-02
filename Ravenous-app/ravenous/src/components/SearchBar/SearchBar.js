@@ -11,7 +11,24 @@ const sortByOptions = {
 // Seacrh Bar component
 
 class SearchBar extends React.Component {
-
+render() {
+    return(
+        <div className="SearchBar">
+            <div className="SearchBar-sort-options">
+                <ul>
+                    .renderSortByOptions()
+                </ul>
+            </div>
+            <div className="SearchBar-fields">
+                <input placeholder="Search Businesses" />
+                <input placeholder="Where?" />
+            </div>
+            <div className="SearchBar-submit">
+                <a>Let's Go</a>
+            </div>
+        </div>
+    )
+}
 //Render Mthood to dynamically create the list items needed to display the sort options (Best Match, Highest Rated, Most Reviewed)  
 renderSortByOptions = () => {
         return Object.keys(sortByOptions).map(sortByOption =>{
@@ -20,3 +37,4 @@ renderSortByOptions = () => {
         });
     }  
 }
+
