@@ -4,13 +4,17 @@ class Footer extends React.Component {
 	render() {
 		return (
 			<footer>
-				<di>
+				<div className="FooterContainer">
 					<h1> Built By RK </h1>
-					<ul>
-						<a href="https://github.com/Raminkeshavarzi"> My GitHub </a>
-						<a href="https://www.linkedin.com/in/keshavarziramin1996/"> Linkedln </a>
+					<ul className="FooterTabs">
+						<a className="FooterLink" href="https://github.com/Raminkeshavarzi">
+							My GitHub
+						</a>
+						<a className="FooterLink" href="https://www.linkedin.com/in/keshavarziramin1996/">
+							Linkedln
+						</a>
 					</ul>
-				</di>
+				</div>
 			</footer>
 		);
 	}
