@@ -4,3 +4,16 @@
     flex-wrap: wrap;
     margin: 4.4rem 10%;
 }
+
+.Business {
+    border: 0.5px black solid;
+    padding: 5px;
+}
+
+.Business:hover {
+    font-size: 1.7rem;
+    padding: 7px;
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+}
