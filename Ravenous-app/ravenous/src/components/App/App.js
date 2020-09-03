@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
+import Footer from '../SearchBar/Footer';
 
 const business = {
 	imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
@@ -24,6 +25,7 @@ class App extends React.Component {
 				<h1>ravenous</h1>
 				<SearchBar />
 				<BusinessList businesses={businesses} />
+				<Footer />
 			</div>
 		);
 	}
