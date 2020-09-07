@@ -18,9 +18,9 @@ class SearchBar extends React.Component {
 	// constructor
 	constructor(props) {
 		this.state = {
-			term: term,
-			location: location,
-			sortBy: sortBy
+			term: '',
+			location: '',
+			sortBy: 'best_match'
 		};
 	}
 	renderSortByOptions() {
