@@ -11,9 +11,6 @@
 }
 
 .Business:hover {
-    font-size: 1.7rem;
-    padding: 7px;
-    background-color: lightslategray;
-    color: white;
-    text-align: center;
+    background-color: azure;
+    color: black;
 }

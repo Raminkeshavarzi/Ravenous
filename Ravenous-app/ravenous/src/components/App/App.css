@@ -43,11 +43,3 @@ h1 {
   color: #fff;
 }
 
-.HideText {
-  font-size: 0.5%;
-}
-
-.HideText:hover {
-  font-size: 1.5rem;
-  color: darkred;
-}
