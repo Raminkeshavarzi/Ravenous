@@ -12,23 +12,22 @@ import './SearchBar.css';
 class SearchBar extends React.Component {
 	// constructor
 	constructor(props) {
-  		this.state = {
+  	this.state = {
 			term: '',
 			location: '',
 			sortBy: 'best_match'
     };
 
-    this.handleLocationChange = this.handleLocationChange.bind(this);
-		this.handleTermChange = this.handleTermChange.bind(this);
-		this.handleSearch = this.handleSearch.bind(this);
+  this.handleLocationChange = this.handleLocationChange.bind(this);
+	this.handleTermChange = this.handleTermChange.bind(this);
+	this.handleSearch = this.handleSearch.bind(this);
     
-    const sortByOptions = {
-	'Best Match': 'best_match',
-	'Highest Rated': 'rating',
-	'Most Reviewed': 'review_count'
-};
-
-	}
+  this.sortByOptions = {
+  	'Best Match': 'best_match',
+	  'Highest Rated': 'rating',
+	  'Most Reviewed': 'review_count'
+  };
+}
 
 	getSortByClass(sortByOption) {
 		if (sortByOption === this.state.sortBy) {
