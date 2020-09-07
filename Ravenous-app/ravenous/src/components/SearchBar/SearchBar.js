@@ -6,25 +6,28 @@ import React from 'react';
 import './SearchBar.css';
 
 //object with keys and values that conform to what the API expects to receive
-const sortByOptions = {
-	'Best Match': 'best_match',
-	'Highest Rated': 'rating',
-	'Most Reviewed': 'review_count'
-};
 
 // Seacrh Bar component
 
 class SearchBar extends React.Component {
 	// constructor
 	constructor(props) {
-		this.state = {
+  		this.state = {
 			term: '',
 			location: '',
 			sortBy: 'best_match'
-		};
-		this.handleLocationChange = this.handleLocationChange.bind(this);
+    };
+
+    this.handleLocationChange = this.handleLocationChange.bind(this);
 		this.handleTermChange = this.handleTermChange.bind(this);
 		this.handleSearch = this.handleSearch.bind(this);
+    
+    const sortByOptions = {
+	'Best Match': 'best_match',
+	'Highest Rated': 'rating',
+	'Most Reviewed': 'review_count'
+};
+
 	}
 
 	getSortByClass(sortByOption) {
@@ -56,7 +59,6 @@ class SearchBar extends React.Component {
 	}
 
 	renderSortByOptions() {
-		term;
 		return Object.keys(sortByOptions).map((sortByOption) => {
 			let sortByOptionValue = sortByOptions[sortByOption];
 			return (
